@@ -52,8 +52,8 @@ public class BankingSystem {
         Scanner sc = new Scanner(System.in);
 
         // Creating two accounts for demo
-        BankAccount userAccount = new BankAccount("John Doe", 1001, 5000);
-        BankAccount anotherAccount = new BankAccount("Alice Smith", 1002, 3000);
+        BankAccount userAccount = new BankAccount("John ", 1001, 5000);
+        BankAccount anotherAccount = new BankAccount("Ali", 1002, 3000);
 
         int choice;
         do {
@@ -78,7 +78,7 @@ public class BankingSystem {
                     userAccount.withdraw(withAmount);
                     break;
                 case 3:
-                    System.out.print("Enter amount to transfer to Alice: $");
+                    System.out.print("Enter amount to transfer to Ali: $");
                     double transferAmount = sc.nextDouble();
                     userAccount.transfer(anotherAccount, transferAmount);
                     break;
