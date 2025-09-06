@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HSBC - Secure Online Banking</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f6f9;
+      color: #333;
+    }
+
+    header {
+      background: #0077cc;
+      padding: 20px 40px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 10;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-container img {
+      height: 40px;
+      margin-right: 12px;
+    }
+
+    .logo-container h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      background: url('capture.jpg') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      padding: 20px;
+    }
+
+    .hero-content h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .cta {
+      background: #ffffff;
+      color: #0077cc;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 60px 20px;
+      background: #fff;
+    }
+
+    .feature {
+      width: 250px;
+      margin: 20px;
+      text-align: center;
+    }
+
+    .feature h3 {
+      color: #0077cc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #002f5f;
+      color: #ccc;
+    }
+
+    @media (max-width: 768px) {
+      .hero-content h2 {
+        font-size: 2rem;
+      }
+
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+
+      nav a {
+        margin: 10px 0 0 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="logo.png" alt="Bank Logo">
+      <h1>HSBC</h1>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Login</a>
+      <a href="#">Signup</a>
+      <a href="#">Admin</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h2>Banking Made Simple</h2>
+      <p>Secure, Fast and Reliable Banking at Your Fingertips</p>
+      <a href="#" class="cta">Get Started</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h3>Transfer Money</h3>
+      <p>Send funds to anyone, anywhere, instantly and securely.</p>
+    </div>
+    <div class="feature">
+      <h3>Withdraw & Deposit</h3>
+      <p>Manage your money with ease. Anytime, anywhere.</p>
+    </div>
+    <div class="feature">
+      <h3>Check Balance</h3>
+      <p>Track your spending and stay in control of your finances.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 HSBC. All rights reserved.
+  </footer>
+
+</body>
+</html>
